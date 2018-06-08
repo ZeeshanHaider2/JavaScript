@@ -29,7 +29,7 @@ console.log(newArr);
 
 //We have used document.write to display the pairs on the index.html document by using a simple for loop.
 //http://www.java2s.com/Tutorial/JavaScript/0220__Array/Outputallarrayelementwithdocumentwrite.htm
-var newArr;
+
 
 for (var i=0; i < newArr.length; i++) {
 
