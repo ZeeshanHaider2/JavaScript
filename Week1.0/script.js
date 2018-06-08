@@ -33,7 +33,7 @@ var newArr;
 
 for (var i=0; i < newArr.length; i++) {
 
-  document.write("Team " +i+ " members: " +newArr[i]+ "<br /><br />");
+  document.write("Team " +i+ " members : " +newArr[i]+ "<br /><br />");
 }
 
 
