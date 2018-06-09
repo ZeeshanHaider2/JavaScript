@@ -14,7 +14,7 @@ pair2 = hYF06 [Math.floor(Math.random()*hYF06.length)];
 
 
 if (pair1 === pair2){  //if names of two members are similar, we push them in an array called duplicate with a message "try again".
- duplicate.push(pair1 + pair2);
+ duplicate.push(pair1 , pair2);
  document.write("Please Try Again!")
 }
 else{
