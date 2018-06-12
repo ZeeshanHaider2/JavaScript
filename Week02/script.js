@@ -16,7 +16,7 @@ var dt = someDate.getDate();
 var mm = someDate.getMonth(); 
 var y = someDate.getFullYear();
 
-var someFormattedDate = (weekDays[dd]  + " , " + months[mm] + " , " +  dt + '/'+ y);
+var someFormattedDate = (weekDays[dd]  + " , " + months[mm] +  dt + '/'+ y);
 document.write( "Today is :" + someFormattedDate + "<br /><br />" );
 
 var numberOfDaysToAdd = parseInt(prompt("Today is :" + someDate + "Please enter, after how many day we can meet : ", "0"), 10); //JavaScript will "convert" numeric string to integer, if you perform calculations on it (as JS is weakly typed). But you can convert it yourself using parseInt or parseFloat
@@ -35,7 +35,7 @@ var dt = someDate.getDate();
 var mm = someDate.getMonth(); 
 var y = someDate.getFullYear();
 
-var someFormattedDate = (weekDays[dd]  + " , " + months[mm] + " , " + dt + '/'+ y);
+var someFormattedDate = (weekDays[dd]  + " , " + months[mm] +  dt + '/'+ y);
 document.write( "We will meet on :" + someFormattedDate + "<br /><br />" );
    
 
