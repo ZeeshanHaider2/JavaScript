@@ -19,7 +19,7 @@ var y = someDate.getFullYear();
 var someFormattedDate = (weekDays[dd]  + " , " + months[mm] +  dt + '/'+ y);
 document.write( "Today is :" + someFormattedDate + "<br /><br />" );
 
-var numberOfDaysToAdd = parseInt(prompt("Today is :" + someDate + "Please enter, after how many day we can meet : ", "0"), 10); //JavaScript will "convert" numeric string to integer, if you perform calculations on it (as JS is weakly typed). But you can convert it yourself using parseInt or parseFloat
+var numberOfDaysToAdd = parseInt(prompt("Today is :" + someDate + " Please enter, after how many days we can meet : ", "0"), 10); //JavaScript will "convert" numeric string to integer, if you perform calculations on it (as JS is weakly typed). But you can convert it yourself using parseInt or parseFloat
 //https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box
 someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
 //https://stackoverflow.com/questions/3818193/how-to-add-number-of-days-to-todays-date
