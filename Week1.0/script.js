@@ -2,9 +2,9 @@
 
 
 
-var newArr = []; //We have declared a var
+let newArr = []; //We have declared a var
 
-var hYF06 = ['Zeeshan Haider', 'Anas', 'Sajid', 'Anuradha', 'Gary', 'Marco', 'Ehsan','Haretha','Krishna', 'Mohammad Azizul Huq','Mohammad Mosiur Rahman','Samara', 'Vignesh', 'Zoey Zou', 'Mohammad Subhiyeh']
+let hYF06 = ['Zeeshan Haider', 'Anas', 'Sajid', 'Anuradha', 'Gary', 'Marco', 'Ehsan','Haretha','Krishna', 'Mohammad Azizul Huq','Mohammad Mosiur Rahman','Samara', 'Vignesh', 'Zoey Zou', 'Mohammad Subhiyeh']
 
 //1.We have shuffled the unshuffled array i.e.hYF06 by using  map and sort
 //2.We put each element in the array in an object, and give it a random sort key
@@ -31,7 +31,7 @@ console.log(newArr);
 //http://www.java2s.com/Tutorial/JavaScript/0220__Array/Outputallarrayelementwithdocumentwrite.htm
 
 
-for (var i=0; i < newArr.length; i++) {
+for (let i=0; i < newArr.length; i++) {
 
   document.write("Team " +i+ " members : " +newArr[i]+ "<br /><br />");
 }
