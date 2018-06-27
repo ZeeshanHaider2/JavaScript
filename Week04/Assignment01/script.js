@@ -65,7 +65,7 @@ const carColors = allCars.filter(function(car) {
 console.log("Cars with colors except lightyellow");
 console.log(carColors);
 
-//We have changed the language by using map method
+
 const newlang = allCars.map(function(car){
      return {
         maerke: car.make,
