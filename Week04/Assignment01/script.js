@@ -44,7 +44,7 @@ function generateCars(numberOfCars) {
 const allCars = generateCars(10);
 console.log("All cars", allCars);
 
-// here we have filtered the cars with speeds more than 30 and less than 60.
+// here we have filtered the cars with speeds more than 30 and less than 60 by using the filter method.
 const slowSpeed = allCars.filter(function(car){
 
     return car.speed > 30 && car.speed < 60;
