@@ -52,6 +52,9 @@ const slowSpeed = allCars.filter(function(car){
 
 console.log("Array of cars with speed between 30 and 60");
 console.log(slowSpeed);
+//for displaying on DOM
+let slowSpeedStringified = JSON.stringify(slowSpeed);
+document.getElementById('between30-60').innerHTML = slowSpeedStringified;
 
 
 // first we will use filter method to filter objects(cars) without color lightyellow.
@@ -64,7 +67,9 @@ const carColors = allCars.filter(function(car) {
 
 console.log("Cars with colors except lightyellow");
 console.log(carColors);
-
+//for displaying on DOM
+let carColorsStringified = JSON.stringify(carColors);
+document.getElementById('withoutLightyellow').innerHTML = carColorsStringified; 
 
 const newlang = allCars.map(function(car){
      return {
@@ -75,6 +80,9 @@ const newlang = allCars.map(function(car){
 });
 console.log("Keys renamed into dansih")
 console.log(newlang);
+//for displaying on DOM
+let newlangStringified = JSON.stringify(newlang);
+document.getElementById('englishTodanish').innerHTML = newlangStringified;
 
 //https://stackoverflow.com/questions/4647817/javascript-object-rename-key
 let  str = JSON.stringify(allCars);
@@ -82,6 +90,7 @@ str = str.replace(/make/g, 'maærke');
 str = str.replace(/color/g, 'farve');
 str = str.replace(/speed/g, 'fart');
 
-danish = JSON.parse(str);
+let danish = JSON.parse(str);
 console.log("Keys renamed into dansih by using JSON.parse(str)")
 console.log(danish);
+document.getElementById('hhh').innerHTML = str; 
