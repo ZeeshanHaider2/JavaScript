@@ -93,4 +93,3 @@ str = str.replace(/speed/g, 'fart');
 let danish = JSON.parse(str);
 console.log("Keys renamed into dansih by using JSON.parse(str)")
 console.log(danish);
-document.getElementById('hhh').innerHTML = str; 
