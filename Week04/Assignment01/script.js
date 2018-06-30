@@ -62,7 +62,7 @@ document.getElementById('between30-60').innerHTML = slowSpeedStringified;
 const carColors = allCars.filter(function(car) {
     return car.color !== "lightyellow";
       }).map(function(car) {
-        return car.color;
+        return car.make;
     });
 
 console.log("Cars with colors except lightyellow");
