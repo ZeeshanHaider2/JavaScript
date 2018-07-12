@@ -84,13 +84,13 @@ console.log(newlang);
 let newlangStringified = JSON.stringify(newlang);
 document.getElementById('englishTodanish').innerHTML = newlangStringified;
 
-Another way to solve:
+//Another way to solve:
 //https://stackoverflow.com/questions/4647817/javascript-object-rename-key
 let  str = JSON.stringify(allCars);
 str = str.replace(/make/g, 'maærke');
 str = str.replace(/color/g, 'farve');
 str = str.replace(/speed/g, 'fart');
-
+//Parse the data with JSON.parse(), and the data becomes a JavaScript object.
 let danish = JSON.parse(str);
 console.log("Keys renamed into dansih by using JSON.parse(str)")
 console.log(danish);
