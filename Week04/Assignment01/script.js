@@ -71,6 +71,8 @@ console.log(carColors);
 let carColorsStringified = JSON.stringify(carColors);
 document.getElementById('withoutLightyellow').innerHTML = carColorsStringified; 
 
+
+//https://reactjs.org/docs/lists-and-keys.html
 const newlang = allCars.map(function(car){
      return {
         maerke: car.make,
