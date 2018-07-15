@@ -1,4 +1,4 @@
-
+ 
 
 /*
 
@@ -40,7 +40,7 @@ const books = [
 
         title: 'book title 3',
 
-        author: 'Mogens Dalsgaard'
+        author: 'H C Andersson'
 
     },
 
@@ -48,7 +48,7 @@ const books = [
 
         title: 'book title 4',
 
-        author: 'Mogens Dalsgaard'
+        author: 'Sorren Kirkegaard'
 
     },
 
@@ -56,7 +56,7 @@ const books = [
 
         title: 'book title 5',
 
-        author: 'Mogens Dalsgaard'
+        author: 'Hjalmer Soderberg'
 
     },
 
@@ -64,7 +64,7 @@ const books = [
 
         title: 'book title 6',
 
-        author: 'Mogens Dalsgaard'
+        author: 'Shakespear'
 
     },
 
@@ -80,7 +80,7 @@ const books = [
 
         title: 'book title 8',
 
-        author: 'Mogens Dalsgaard'
+        author: 'Anthony Johansoon'
 
     },
 
@@ -88,7 +88,7 @@ const books = [
 
         title: 'book title 9',
 
-        author: 'Mogens Dalsgaard'
+        author: 'H C Andersson'
 
     },
 
@@ -104,20 +104,20 @@ const books = [
 
 
 
-const bookListElement = document.querySelector('.book-list');
+const ul = document.querySelector('.book-list');
 
-console.log(bookListElement);
+console.log(ul);
 
 
 
 books.forEach(function(book) {
 
-    const liElement = document.createElement('li'); //creating elements
+    const li = document.createElement('li'); //creating elements
 
-    liElement.innerHTML = book.author + ': ' + book.title; //text of the elements
+    li.innerHTML = book.author + ': ' + book.title; //text of the elements
 
 
 
-    bookListElement.appendChild(liElement); //appending elemnts to the UL -> fist we should define the bookListElement by using querySelector and give class to the html.index
+    ul.appendChild(li); //appending elemnts to the UL -> fist we should define the bookListElement by using querySelector and give class to the html.index
 
 });
