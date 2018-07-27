@@ -47,7 +47,7 @@ const rawJSON = `[{"id":65021716,"node_id":"MDEwOlJlcG9zaXRvcnk2NTAyMTcxNg==","n
  
     for(let i = 0; i < infoList.length; i++){
     const list = document.createElement('p');
-    list.textContent = infoList[i] + " : " + repo[infoList[i]];
+    list.innerHTML = infoList[i] + " : " + repo[infoList[i]];
     li.appendChild(list);    
   }   
   
@@ -58,4 +58,29 @@ const rawJSON = `[{"id":65021716,"node_id":"MDEwOlJlcG9zaXRvcnk2NTAyMTcxNg==","n
 renderList2();
 
 
+//Simple forEach (for loop) examples :
 
+var array1 = [1, 2, 3];
+
+array1.forEach(function(element) {
+  console.log(element);
+});
+
+array1.forEach(function(element){
+  console.log(element*element);
+});
+
+array1.forEach(element => {
+  console.log(element+element);
+});
+
+
+
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+items.forEach(function(item){
+  copy.push(item)
+});
+
+console.log(copy);
