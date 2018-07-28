@@ -40,19 +40,24 @@ function fetchJSONData(url,callback){
          const searchString = formData.get('searchString');
          //console.log("form is being submitted", formData); 
          //console.log(searchString);
+
+         if (searchString === "") { //if someone eneters empty string
+            alert('type something');
+            return;
+       }
+
+         const tbody = document.querySelector('#Repo-List >tbody');
+         tbody.innerHTML = "" ; //to clear the body before sending the ajax request
          const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture+' + searchString
     
          fetchJSONData(url, data =>{
 
-            const tbody = document.querySelector('#Repo-List >tbody');
-            tbody.innerHTML = "" ; //to clear the body before sending the ajax request
-
-            if (data.Response === 'False') { //If I write wrong queries
+        
+            if (data['total_count'] === 0) { //If someone type bull shit
                 alert(data.Error);
                 return;
-            }
+        }
     
-       
 
         for (const element of data.items){ //for iterating over each element of the object array
             const tr = document.createElement('tr');
