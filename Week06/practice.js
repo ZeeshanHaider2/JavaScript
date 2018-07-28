@@ -23,6 +23,13 @@ function fetchJSONData(url,callback){
     // Sends the request 
     req.send();
     }
+
+    
+
+
+
+
+
     
     const form = document.querySelector('#searchForm');
     //console.log(form);
@@ -69,7 +76,7 @@ function fetchJSONData(url,callback){
     
     });
 
-
+    
     function showElementDetails(element, div){
         const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture-CPH+'+ element.name
         fetchJSONData(url, elementDetails =>{
@@ -78,7 +85,7 @@ function fetchJSONData(url,callback){
             Repo's Full Name : ${element.full_name}<br>
             No. of forks : ${element.forks}<br>
             No. of watchers  : ${element.watchers}<br>
-            Score: ${element.score}`
+            contributors_url: ${element.contributors_url}`
 
         })
         //div.innerHTML = 'Coming soon' + element.name;
@@ -87,5 +94,40 @@ function fetchJSONData(url,callback){
 
 
 
-
+    const button = document.querySelector(".callFunction");
+  
     
+    
+    button.addEventListener("click", function() {
+        console.log("you clicked me!");
+        renderList("showFullList");
+      });
+    
+  
+    
+    function renderList(toShow) {
+        fetchJSONData('https://api.github.com/orgs/HackYourFuture-CPH/repos', function(repolist) {
+       
+    
+    let showOnWebpage = [];
+    if (toShow === "showFullList"){
+        showOnWebpage = repolist;
+    
+    }
+      
+        const ul = document.querySelector("#repos-list");
+       // console.log(ul);
+        ul.innerHTML = ""; 
+        
+        showOnWebpage.forEach(repo => {
+          
+          const li = document.createElement('li');
+          li.innerHTML = '<a target="_blank" href=' + repo.html_url + "> " + repo.name + " </a>";
+          //console.log(li);
+         
+            ul.appendChild(li);
+    
+    
+        });
+    });
+    }

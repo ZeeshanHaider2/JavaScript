@@ -24,7 +24,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 40px;
-  width:1000px;
+  width:800px;
 }
 
 .topnav a:hover {
@@ -118,17 +118,49 @@ tbody{
     transform: rotate(360deg);
   }
 }
+
+
+.callFunction {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns*/
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 </style>
 </head>
-<style>
 
-</style>
 
 <body>
 
     
  <div class="topnav">
-    <a class="active" href="#home">Search Repositories</a>
+    <a class="active" href="#home">JS02 Asssignment06</a>
                 
     <div class="search-container">
         <form id="searchForm" action="/action_page.php">
@@ -140,22 +172,33 @@ tbody{
         </form>
     </div>
  </div>
+ 
 
-     
-    <table id='Repo-List'>
-        <thead>
-            <tr>
-                <th></th>
-               
-            </tr>
-        </thead>
-        <tbody>
+ <div class="row">
+  <div class ="column">
+      <button class = "callFunction"> Show Repositories</button>
+      <ul id ="repos-list"></ul> 
+</div>
+ 
+  <div class ="column">
 
-        </tbody>
-    </table>
+      <table id='Repo-List'>
+          <thead>
+              <tr>
+                  <th></th>
+                 
+              </tr>
+          </thead>
+          <tbody>
+  
+          </tbody>
+      </table>
+  </div>
+</div>
 
-          
-       
+
+
+
 
     <script type="text/javascript" src='practice.js'></script>
 </body>
