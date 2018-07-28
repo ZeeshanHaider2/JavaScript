@@ -78,7 +78,7 @@ function fetchJSONData(url,callback){
 
     
     function showElementDetails(element, div){
-        const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture-CPH+'+ element.name
+        const url = 'https://api.github.com/search/repositories?q=user:HackYourFuture+'+ element.name
         fetchJSONData(url, elementDetails =>{
             div.innerHTML = `
             Repo's Id : ${element.id}<br>
@@ -106,7 +106,7 @@ function fetchJSONData(url,callback){
   
     
     function renderList(toShow) {
-        fetchJSONData('https://api.github.com/orgs/HackYourFuture-CPH/repos', function(repolist) {
+        fetchJSONData('https://api.github.com/orgs/HackYourFuture/repos', function(repolist) {
        
     
     let showOnWebpage = [];
