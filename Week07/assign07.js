@@ -63,8 +63,8 @@ const averageRatings = allMoviesData
 }) 
 .reduce((accumulator, rating) => {
  
-  console.log("accumulator", accumulator);
-  console.log("rating",rating);
+  //console.log("accumulator", accumulator);
+ // console.log("rating",rating);
     return accumulator + rating;
    
 });
