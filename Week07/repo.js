@@ -22,8 +22,10 @@ function getAjaxData(url, callback) {
 }
 
 getAjaxData("https://api.github.com/orgs/HackYourFuture-CPH/repos", (hYFrepos)=> {
-    console.log("HYF Repositories", hYFrepos);
-
+    
+console.log("..........................................................................................................")
+console.log("STEP :02")
+console.log("HYF Repositories", hYFrepos);
 const namesOfForkedRepo = hYFrepos
 .filter(repo => repo.forks_count )
 .map(repo => repo.full_name);
