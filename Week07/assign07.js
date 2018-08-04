@@ -119,6 +119,7 @@ const moviesBetween1980To1989 = allMoviesData
 console.log("Total number of movies between1980To1989 = ", moviesBetween1980To1989.length);
 
 
+
  
 });
 
