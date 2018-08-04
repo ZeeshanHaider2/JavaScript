@@ -34,7 +34,7 @@ console.log(" Names of HYF repositories, that have been forked are", namesOfFork
 const totalForkedRepo = hYFrepos
 .filter(repo => repo.forks_count )
 .map(repo => repo.forks_count).length;
-console.log(" Total HYF repositories, that have been forked", totalForkedRepo)
+console.log(" Total HYF repositories, that have been forked =", totalForkedRepo)
 
 
 const mostForkedRepo = hYFrepos
@@ -86,7 +86,7 @@ console.log(" Names of HYF repositories, that have been Watched are", namesOfWat
 const totalStargazersCount= hYFrepos
 .filter(repo => repo.stargazers_count)
 .map(repo => repo.stargazers_count).length;
-console.log(" Total HYF repositories, that have been stargazed", totalStargazersCount)
+console.log(" Total HYF repositories, that have been stargazed =", totalStargazersCount)
 
 
 
