@@ -11,8 +11,8 @@ function giveStartAndEnd (start,end){
 //const n = 5 ;
 
 function divisibilityChecker(n){
-    function check(x1){
-    return x1 % n === 0;
+    function check(x){
+    return x % n === 0;
 //const  check = x1 =>  x1 % n === 0;
 }
     return check;
