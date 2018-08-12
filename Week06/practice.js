@@ -26,10 +26,6 @@ function fetchJSONData(url,callback){
 
     
 
-
-
-
-
     
     const form = document.querySelector('#searchForm');
     //console.log(form);
@@ -136,3 +132,6 @@ function fetchJSONData(url,callback){
         });
     });
     }
+
+
+//Class Lecture by Pankaj https://www.youtube.com/watch?v=Z73FVh_SX5Y
