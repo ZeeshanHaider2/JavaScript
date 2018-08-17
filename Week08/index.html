@@ -6,10 +6,43 @@
 	  
 	</head>
 <body>
-   <h1>Please Check Console</h1>
+  <form id = "searchForm">
+		<div>
+					<input type = "text" name = "searchText" >
+					<button type = "submit">Search</button>
+		</div>
+		<div>
 
-   
-<script src="week08.js"></script>
+				<input type="radio" name="selectedTag" value="All" checked>
+			All</label>
+		
+				<input type="radio"  name="selectedTag" value="Good">
+			Good</label>
+		
+				<input type="radio" name="selectedTag" value="Average">
+			Average</label>
+
+			<input type="radio" name="selectedTag" value="Bad">
+			Bad</label>
+			</div>
+		</form>
+	<p id = "searchCount" style = "display: none"></p>
+	<table id="moviesList" style = "display:none" border = "1">
+		<thead>
+				<th>Title</th>
+				<th>Year</th>
+				<th>Rating</th>
+				<th>Votes</th>
+				<th>Tag</th>
+		</thead>
+		<tbody>
+		</tbody>
+</table>
+
+
+	 
+<script src="movies.js"></script>	 
+<script src="week08.js"></script>	
 
 </body>
 </html>
