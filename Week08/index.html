@@ -2,27 +2,50 @@
 <html>
 	<head>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>JS03 Assignmnet02 Week08</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <title>JS03 Assignmnet02 Week08 (Movie Search)</title>
+	<style>
+		body{
+             background-color: rgb(246, 250, 250);
+        }
+
+		#moviesList{
+			background-color: rgb(207, 218, 219);
+			width :fit-content;
+		}
+    
+
+
+	
+	</style>
 	  
 	</head>
 <body>
-  <form id = "searchForm">
-		<div>
-					<input type = "text" name = "searchText" >
-					<button type = "submit">Search</button>
+	<h1>Please Use Google Chrome to Search Movies</h1>
+	<h2>It will take few seconds to load data :)</h2>
+   <div class="search-container">
+     <form id = "searchForm" action="/action_page.php">
+		
+		<label>
+			<input type = "text" name = "searchText" placeholder= "Search Movies here....">
+		</label>
+			<button type="submit"><i class="fa fa-search"></i></button>
+
+					
+					 
 		</div>
 		<div>
 
-				<input type="radio" name="selectedTag" value="All" checked>
-			All</label>
+			<label><input type="radio" name="selectedTag" value="All" checked>
+			   All</label>
 		
-				<input type="radio"  name="selectedTag" value="Good">
+			<label><input type="radio"  name="selectedTag" value="Good">
 			Good</label>
 		
-				<input type="radio" name="selectedTag" value="Average">
+			<label><input type="radio" name="selectedTag" value="Average">
 			Average</label>
 
-			<input type="radio" name="selectedTag" value="Bad">
+			<label><input type="radio" name="selectedTag" value="Bad">
 			Bad</label>
 			</div>
 		</form>
