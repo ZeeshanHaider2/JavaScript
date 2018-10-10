@@ -118,6 +118,6 @@ books.forEach(function(book) {
 
 
 
-    ul.appendChild(li); //appending elemnts to the UL -> fist we should define the bookListElement by using querySelector and give class to the html.index
+    ul.appendChild(li); //appending elemnts to the UL -> first we should define the bookListElement by using querySelector and give class to the html.index
 
 });
