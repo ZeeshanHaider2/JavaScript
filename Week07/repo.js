@@ -27,35 +27,35 @@ console.log("...................................................................
 console.log("STEP :02")
 console.log("HYF Repositories", hYFrepos);
 const namesOfForkedRepo = hYFrepos
-.filter(repo => repo.forks_count )
-.map(repo => repo.full_name);
+      .filter(repo => repo.forks_count )
+         .map(repo => repo.full_name);
 console.log(" Names of HYF repositories, that have been forked are", namesOfForkedRepo)
 
 const totalForkedRepo = hYFrepos
-.filter(repo => repo.forks_count )
-.map(repo => repo.forks_count).length;
+      .filter(repo => repo.forks_count )
+          .map(repo => repo.forks_count).length;
 console.log(" Total HYF repositories, that have been forked =", totalForkedRepo)
 
 
 const mostForkedRepo = hYFrepos
-.filter(repo => repo.forks_count >= 9 )
-.map(repo => repo.full_name );
+       .filter(repo => repo.forks_count >= 9 )
+          .map(repo => repo.full_name );
 console.log(" Names of most Forked repositories (7 or more times) are", mostForkedRepo)
 
 const leastForkedRepo = hYFrepos
-.filter(repo => repo.forks_count <=4 && repo.forks_count >1)
-.map(repo => repo.full_name );
+      .filter(repo => repo.forks_count <=4 && repo.forks_count >1)
+       .map(repo => repo.full_name );
 console.log("Names of least forked repositories (4 or less than 4 but more than one time) are ", leastForkedRepo)
 
 
 const OnceForkedRepo = hYFrepos
-.filter(repo => repo.forks_count ===1)
-.map(repo => repo.full_name );
+      .filter(repo => repo.forks_count ===1)
+       .map(repo => repo.full_name );
 console.log("Names of once forked repositories are ", OnceForkedRepo)
 
 const zeroForkedRepo = hYFrepos
-.filter(repo => repo.forks_count === 0)
-.map(repo => repo.full_name );
+      .filter(repo => repo.forks_count === 0)
+       .map(repo => repo.full_name );
 console.log(" Zero forked HYF repositories are", zeroForkedRepo)
 
 
@@ -79,13 +79,13 @@ const totalRepoForks = hYFrepos
 console.log("Sum of Forks for all repos =", totalRepoForks);
 
 const namesOfWatchedRepo = hYFrepos
-.filter(repo => repo.watchers_count )
-.map(repo => repo.full_name);
+        .filter(repo => repo.watchers_count )
+         .map(repo => repo.full_name);
 console.log(" Names of HYF repositories, that have been Watched are", namesOfWatchedRepo)
 
 const totalStargazersCount= hYFrepos
-.filter(repo => repo.stargazers_count)
-.map(repo => repo.stargazers_count).length;
+         .filter(repo => repo.stargazers_count)
+           .map(repo => repo.stargazers_count).length;
 console.log(" Total HYF repositories, that have been stargazed =", totalStargazersCount)
 
 
