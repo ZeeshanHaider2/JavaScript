@@ -37,8 +37,8 @@ console.log("All movie data =", allMoviesData);
 let numbers = [1, 2, 3, 4];
 
 let doubleOdd = numbers
-.filter (number => number % 2 !==0)
-.map (number => number * 2);
+    .filter (number => number % 2 !==0)
+     .map (number => number * 2);
 console.log("Filtered array",doubleOdd);
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
