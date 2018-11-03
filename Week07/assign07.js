@@ -108,8 +108,7 @@ console.log("Total number of Bad movies =", moviesWithBadRating.length)
 
 const keywords = allMoviesData
 
-.map(movie => 
-(movie === "The") && (movie === "dog") && (movie === "who") && (movie === "is") && (movie === "not") && (movie === "a") && (movie=== "man"))
+.map(movie => (movie === "The") && (movie === "dog") && (movie === "who") && (movie === "is") && (movie === "not") && (movie === "a") && (movie=== "man"))
 .length
 
 console.log('Total number of Keywords "The", "dog", "who", "is", "not", "a", "man" in movies =', keywords);
@@ -118,7 +117,7 @@ console.log('Total number of Keywords "The", "dog", "who", "is", "not", "a", "ma
 
 //2.5.Count the number of movies made between 1980-1989 (including both the years).
 const moviesBetween1980To1989 = allMoviesData
-.filter (movie => movie.year >= 1980 && movie.year <= 1989 )
+       .filter (movie => movie.year >= 1980 && movie.year <= 1989 )
 console.log("Total number of movies between1980To1989 = ", moviesBetween1980To1989.length);
 
 
